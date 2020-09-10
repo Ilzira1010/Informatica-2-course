@@ -1,0 +1,159 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    
+    <style>             
+.google {
+font: 10 300% Georgia, 'Times New Roman';
+position: absolute;
+    text-indent: 0px;
+    top: 1%;
+    left: 40%;
+}
+.google span:nth-child(1) {color: #07aff9;}
+.google span:nth-child(2) {color: red;}
+.google span:nth-child(3) {color: #ff6a00;}
+.google span:nth-child(4) {color: #07aff9;}
+.google span:nth-child(5) {color: green;}
+.google span:nth-child(6) {color: red; }
+p {
+           position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translate(-40%, -40%);
+    background: #ffffff;
+    height: 40px;
+    border-radius: 40px;
+    padding: 10px;
+    
+        }
+ .yandex {
+      font: 40 300% Georgia, 'Times New Roman';
+   text-indent: 0px;
+  position: absolute;
+    top: 20%;
+    left: 40%;
+}
+.yandex:first-letter { color: #ff0000; }
+       p1 {
+           position: absolute;
+    top: 34%;
+    left: 50%;
+    transform: translate(-40%, -40%);
+    background: #ffffff;
+    height: 40px;
+    border-radius: 40px;
+    padding: 10px;
+        }  
+.bing {
+    font: 60 100% Georgia, 'Times New Roman';
+   text-indent: 0px;
+  position: absolute;
+    top: 40%;
+    left: 50%;
+    color: grey;
+    } 
+p2 { position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-40%, -40%);
+    background: #ffffff;
+    height: 40px;
+    border-radius: 40px;
+    padding: 10px;
+        }  
+.rambler {
+     font: 60 300% Georgia, 'Times New Roman';
+   text-indent: 0px;
+  position: absolute;
+    top: 50%;
+    left: 40%;
+    color: blue;
+  }
+
+ p3 { position: absolute;
+    top: 63%;
+    left: 50%;
+    transform: translate(-40%, -40%);
+    background: #ffffff;
+    height: 40px;
+    border-radius: 40px;
+    padding: 10px;
+        }  
+ .META {
+      font: 83 300% Georgia, 'Sitka Text';
+   text-indent: 0px;
+  position: absolute;
+    top: 72%;
+    left: 50%;
+    color:#040465;
+}
+
+ p4 { position: absolute;
+    top: 79%;
+    left: 50%;
+    transform: translate(-40%, -40%);
+    background: #ffffff;
+    height: 40px;
+    border-radius: 40px;
+    padding: 10px;
+        }  
+        input[type="text"] { width: 35vw }
+       
+    </style>
+</head>
+<body>
+    <div class="google">
+        <span>G</span><span>o</span><span>o</span><span>g</span><span>l</span><span>e</span>
+    </div>
+    <form action="https://www.google.com/search" method="get">
+        <p>
+            <label for="search_input"></label>
+            <input id="search_input" type="text" name="q"btn btn-success placeholder="Введите поисковый запрос или URL" />
+            <input type="submit" name="text" class="btn btn-primary black-background white"  value="Найти" />
+
+        </p>
+    </form>
+    <form action="https://www.yandex.ru/search" method="get">
+        <p1>
+            <label for="search_input"></label>
+            <input id="search" type="text" name="text" placeholder="Введите поисковый запрос или URL" />
+            <input type="submit" class="btn btn-light" value="Найти"  />
+        </p1>
+    </form>
+    <span class="yandex">Яндекс</span>
+
+    <form action="https://www.bing.com/search" method="get">
+
+        <p2>
+            <label for="search_input"></label>
+            <input id="search1" type="text" name="q" class="btn btn-dark" placeholder="Введите поисковый запрос или URL" />
+            <input type="submit" class= "btn btn-primary navbar-inverse" value="Найти" />
+        </p2>
+    </form>
+    <span class="bing" col> Bing</span>
+    <form action="https://nova.rambler.ru/search" method="get">
+
+        <p3>
+            <label for="search_input"></label>
+            <input id="search2" type="text" name="query" placeholder="Введите поисковый запрос или URL" />
+            <input type="submit" class="btn btn-dark" value="Найти" />
+        </p3>
+    </form>
+    <span class="rambler" col> Rambler</span>
+    <form action="https://www.meta.ua//search" method="get">
+
+        <p4>
+            <label for="search_input"></label>
+            <input id="search4" type="text" name="q" class="form-control"placeholder="Введите поисковый запрос или URL" />
+            <input type="submit"class="btn btn-success" value="Найти" />
+        </p4>
+    </form>
+    <span class="META" col> META </span>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</body>
+</html>
