@@ -44,4 +44,4 @@ select price, model from laptop where model in (select model from product where 
 union
 select out.point, out.date, inc, out from income_o inc right join outcome_o out on inc.point = out.point and inc.date = out.date
 31. select class, country from classes where bore >=16
-
+33. Select out.ship from outcomes out, battles b where out.result ='sunk' and b.name = 'North Atlantic' and out.battle = b.name
